@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family:sans-serif;
+    src: url(/faq-accordion-main/assets/fonts/static/WorkSans-Bold.ttf);
+} 
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../faq-accordion-main/assets/images/background-pattern-desktop.svg) no-repeat;
+    display: flex;
+    background-color:  hsl(275, 100%, 97%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+
+}
+.container{
+    background-color:  hsl(0, 0%, 100%);
+    width: 500px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+}
+.container .heading{
+    display: flex;
+    gap: 25px;
+}
+.container .heading h1{
+    font-weight: 800;
+}
+.container .questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container p{
+     color: hsl(292, 42%, 14%);
+     font-size: 16px;
+}
+.container .questions img{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+
+.attribution { font-size: 11px; text-align: center;
+    margin-top: 40px; }
+    .attribution a { color: hsl(228, 45%, 44%); 
+   }
+
+    hr{
+        border-color: 1pxsolid black;
+    }
+    @media(max-width:565px){
+        .container{
+            width: 400px;
+        }
+    }
+    @media(min-width:400px){
+        .container{
+            width: 350px;
+        }
+    }
